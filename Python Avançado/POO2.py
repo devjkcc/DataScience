@@ -39,8 +39,19 @@ print(a.valorExponencial)
 # Essa é uma herança em python
 # A classe calculo herda todos os atributos e metodos de TestePOO2
 class calculo(TestePoo2):
-    pass
+  def __init__(self,d=5):
+      super().__init__(v=10, i =1)
+      self.divisor = d
+  def decrementa(self):
+      self.valor = self.valor - self.incremento
+  def divide(self):
+      self.valor = self.valor/self.divisor
 
-c = calculo()
+c=calculo()
 c.incrementa()
-print(c.valor)
+c.decrementa()
+c.divide()
+
+
+
+
