@@ -35,3 +35,12 @@ print(a.valor)
 a.verify()
 a.exponencial(3)
 print(a.valorExponencial)
+
+# Essa é uma herança em python
+# A classe calculo herda todos os atributos e metodos de TestePOO2
+class calculo(TestePoo2):
+    pass
+
+c = calculo()
+c.incrementa()
+print(c.valor)
